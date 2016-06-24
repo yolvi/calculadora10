@@ -23,11 +23,17 @@ public class Calculadora {
     }
     
     float restar(float a, float b){
+         if (a==0){
+            System.out.print("no se puede restar");
+            return 0;
+        }  
         return a - b;
     }
     
     float multiplicacion(float a, float b){
+        
         return a * b;
+        
     }
     
     float division(float a, float b){
@@ -44,5 +50,7 @@ public class Calculadora {
     
     string sms(string sms){
         return "*" + sms + "*";
+        
     }
+   
 }
